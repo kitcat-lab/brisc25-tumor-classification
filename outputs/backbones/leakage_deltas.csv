@@ -1,0 +1,6 @@
+workflow,audited,unaudited,delta_pp,ci_overlap
+W10_RadImageNet_ResNet50,72.12,73.8,1.68,True
+W6_ResNet50_ImageNet,97.49,98.0,0.51,True
+W7_VGG16_ImageNet,97.94,98.9,0.96,True
+W8_EfficientNetB2_ImageNet,93.95,95.3,1.35,True
+W9_ConvNeXtTiny_ImageNet,94.99,95.5,0.51,True

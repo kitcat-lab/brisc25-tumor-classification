@@ -1,0 +1,18 @@
+{
+  "workflow": "W10_RadImageNet_ResNet50",
+  "dataset": "audited",
+  "img_size": 224,
+  "batch_size": 16,
+  "train_imgs": 3491,
+  "val_imgs": 872,
+  "test_imgs": 678,
+  "accuracy": 72.12,
+  "f1_macro": 72.78,
+  "auc_ovr": 90.81,
+  "ci95_lo": 69.17,
+  "ci95_hi": 75.37,
+  "epochs_head": 5,
+  "epochs_ft": 12,
+  "train_time_s": 853.8,
+  "inference_ms": 173.52
+}

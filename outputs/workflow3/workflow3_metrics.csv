@@ -1,0 +1,2 @@
+workflow,accuracy,precision,recall,f1,auc,feature_layer,n_features,n_train,n_test
+Hybrid CNN+LGBM,96.39999999999999,96.68973437818762,96.72267253358035,96.6761795130572,99.83968448570756,dropout,128,4000,1000

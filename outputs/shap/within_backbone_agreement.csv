@@ -1,0 +1,7 @@
+backbone,mean_rho_across_classifiers,min_rho,max_rho
+W10_RadImageNet_ResNet50,0.979,0.964,0.988
+W6_ResNet50_ImageNet,0.953,0.92,0.972
+W3_CNN_scratch,0.939,0.915,0.976
+W7_VGG16_ImageNet,0.912,0.862,0.95
+W8_EfficientNetB2_ImageNet,0.811,0.704,0.947
+W9_ConvNeXtTiny_ImageNet,0.81,0.746,0.911

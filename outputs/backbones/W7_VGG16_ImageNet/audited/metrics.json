@@ -1,0 +1,18 @@
+{
+  "workflow": "W7_VGG16_ImageNet",
+  "dataset": "audited",
+  "img_size": 224,
+  "batch_size": 8,
+  "train_imgs": 3491,
+  "val_imgs": 872,
+  "test_imgs": 678,
+  "accuracy": 97.94,
+  "f1_macro": 97.96,
+  "auc_ovr": 99.86,
+  "ci95_lo": 96.61,
+  "ci95_hi": 98.97,
+  "epochs_head": 5,
+  "epochs_ft": 12,
+  "train_time_s": 1282.9,
+  "inference_ms": 17.87
+}

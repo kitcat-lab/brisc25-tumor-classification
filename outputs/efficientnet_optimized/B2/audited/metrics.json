@@ -1,0 +1,18 @@
+{
+  "variant": "EfficientNetB2",
+  "protocol": "optimised (full FT, BN frozen)",
+  "dataset": "audited",
+  "img_size": 260,
+  "batch_size": 8,
+  "train_imgs": 3491,
+  "val_imgs": 872,
+  "test_imgs": 678,
+  "accuracy": 98.23,
+  "f1_macro": 98.29,
+  "auc_ovr": 99.96,
+  "ci95_lo": 97.05,
+  "ci95_hi": 99.12,
+  "epochs_head": 5,
+  "epochs_ft": 13,
+  "train_time_s": 1234.6
+}

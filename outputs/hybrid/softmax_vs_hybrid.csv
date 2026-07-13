@@ -1,0 +1,7 @@
+backbone,softmax_acc,hybrid_best_acc,hybrid_best_clf,delta_pp
+W3_CNN_scratch,94.54,96.76,LightGBM,2.22
+W6_ResNet50_ImageNet,97.49,97.49,SVM (RBF),0.0
+W7_VGG16_ImageNet,97.94,98.67,LightGBM,0.73
+W8_EfficientNetB2_ImageNet,93.95,94.84,SVM (RBF),0.89
+W9_ConvNeXtTiny_ImageNet,94.99,96.46,SVM (RBF),1.47
+W10_RadImageNet_ResNet50,72.12,82.01,LightGBM,9.89

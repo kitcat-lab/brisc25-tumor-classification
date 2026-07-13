@@ -1,0 +1,18 @@
+{
+  "workflow": "W8_EfficientNetB2_ImageNet",
+  "dataset": "audited",
+  "img_size": 260,
+  "batch_size": 8,
+  "train_imgs": 3491,
+  "val_imgs": 872,
+  "test_imgs": 678,
+  "accuracy": 93.95,
+  "f1_macro": 94.18,
+  "auc_ovr": 99.3,
+  "ci95_lo": 92.18,
+  "ci95_hi": 95.72,
+  "epochs_head": 5,
+  "epochs_ft": 12,
+  "train_time_s": 1021.3,
+  "inference_ms": 232.08
+}

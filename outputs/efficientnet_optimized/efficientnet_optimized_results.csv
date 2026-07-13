@@ -1,0 +1,7 @@
+variant,protocol,dataset,img_size,batch_size,train_imgs,val_imgs,test_imgs,accuracy,f1_macro,auc_ovr,ci95_lo,ci95_hi,epochs_head,epochs_ft,train_time_s
+EfficientNetB0,"optimised (full FT, BN frozen)",audited,224,16,3491,872,678,98.53,98.58,99.95,97.49,99.41,5,20,1157.8
+EfficientNetB0,"optimised (full FT, BN frozen)",unaudited,224,16,4000,1000,1000,99.2,99.28,99.96,98.6,99.7,5,25,1611.9
+EfficientNetB1,"optimised (full FT, BN frozen)",audited,240,16,3491,872,678,98.82,98.84,99.96,97.94,99.56,5,18,1544.3
+EfficientNetB1,"optimised (full FT, BN frozen)",unaudited,240,16,4000,1000,1000,99.4,99.46,99.99,98.9,99.8,5,17,1528.9
+EfficientNetB2,"optimised (full FT, BN frozen)",audited,260,8,3491,872,678,98.23,98.29,99.96,97.05,99.12,5,13,1234.6
+EfficientNetB2,"optimised (full FT, BN frozen)",unaudited,260,8,4000,1000,1000,98.7,98.85,99.97,98.0,99.3,5,10,1278.1

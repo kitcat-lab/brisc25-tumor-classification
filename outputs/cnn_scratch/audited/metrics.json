@@ -1,0 +1,17 @@
+{
+  "model": "scratch_cnn_optimised",
+  "dataset": "audited",
+  "img_size": 128,
+  "batch_size": 32,
+  "params": 648996,
+  "train_imgs": 3491,
+  "val_imgs": 872,
+  "test_imgs": 678,
+  "accuracy": 91.89,
+  "f1_macro": 92.18,
+  "auc_ovr": 98.66,
+  "ci95_lo": 89.82,
+  "ci95_hi": 93.81,
+  "epochs": 80,
+  "train_time_s": 1164.9
+}

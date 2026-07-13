@@ -1,0 +1,6 @@
+Workflow,Accuracy (%),F1 macro (%),AUC (%)
+1: Wavelet + LGBM,91.38,91.32,98.61
+"2: CNN (3-block, scratch)",94.54,94.5,99.56
+3: Hybrid CNN-scratch + XGBoost,96.5,96.75,99.8
+4: EfficientNetB2 (TL fine-tuned),93.44,93.54,99.16
+5: EfficientNetB2 + XGBoost,94.9,95.07,99.37

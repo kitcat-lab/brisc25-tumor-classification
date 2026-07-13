@@ -1,0 +1,7 @@
+variant,partition,uniform_acc,optimised_acc,gain_pp
+B0,audited,89.09,98.53,9.44
+B0,unaudited,92.2,99.2,7.0
+B1,audited,,98.82,
+B1,unaudited,,99.4,
+B2,audited,93.95,98.23,4.28
+B2,unaudited,95.3,98.7,3.4

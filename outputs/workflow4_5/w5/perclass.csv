@@ -1,0 +1,5 @@
+class,precision,recall,f1,support
+glioma,97.77,90.67,94.09,193
+meningioma,87.86,93.83,90.75,162
+no_tumor,98.48,100.0,99.24,130
+pituitary,97.94,98.45,98.19,193

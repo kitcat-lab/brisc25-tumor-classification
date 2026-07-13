@@ -1,0 +1,13 @@
+{
+  "source_notebook": "workflow2_leakage_v3.ipynb (audited protocol)",
+  "seed": 42,
+  "img_size": 128,
+  "batch_size": 32,
+  "epochs_max": 30,
+  "epochs_run": 30,
+  "train_time_s": 457.9,
+  "test_accuracy": 93.81,
+  "test_f1_macro": 93.94,
+  "test_auc_ovr": 99.55,
+  "note": "Corrected training: deterministic dataframe shuffle + val_gen shuffle=False. Replaces modelo_brisc.h5 for W11."
+}

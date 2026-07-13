@@ -1,0 +1,5 @@
+,glioma,meningioma,no_tumor,pituitary
+glioma,251,3,0,0
+meningioma,3,300,0,3
+no_tumor,0,0,140,0
+pituitary,0,2,0,298

@@ -1,0 +1,11 @@
+workflow,dataset,img_size,batch_size,train_imgs,val_imgs,test_imgs,accuracy,f1_macro,auc_ovr,ci95_lo,ci95_hi,epochs_head,epochs_ft,train_time_s,inference_ms
+W10_RadImageNet_ResNet50,audited,224,16,3491,872,678,72.12,72.78,90.81,69.17,75.37,5,12,853.8,173.52
+W10_RadImageNet_ResNet50,unaudited,224,16,4000,1000,1000,73.8,74.2,91.61,71.0,76.4,5,12,1015.6,147.88
+W6_ResNet50_ImageNet,audited,224,16,3491,872,678,97.49,97.56,99.8,96.17,98.53,5,12,832.1,149.36
+W6_ResNet50_ImageNet,unaudited,224,16,4000,1000,1000,98.0,98.18,99.94,97.1,98.8,5,12,926.7,140.68
+W7_VGG16_ImageNet,audited,224,8,3491,872,678,97.94,97.96,99.86,96.61,98.97,5,12,1282.9,17.87
+W7_VGG16_ImageNet,unaudited,224,8,4000,1000,1000,98.9,99.05,99.93,98.3,99.5,5,12,1491.3,27.35
+W8_EfficientNetB2_ImageNet,audited,260,8,3491,872,678,93.95,94.18,99.3,92.18,95.72,5,12,1021.3,232.08
+W8_EfficientNetB2_ImageNet,unaudited,260,8,4000,1000,1000,95.3,95.78,99.61,93.9,96.6,5,12,1138.5,250.75
+W9_ConvNeXtTiny_ImageNet,audited,224,8,3491,872,678,94.99,95.16,99.63,93.36,96.61,5,12,1460.8,2280.64
+W9_ConvNeXtTiny_ImageNet,unaudited,224,8,4000,1000,1000,95.5,96.04,99.73,94.2,96.7,5,12,1679.7,2343.54

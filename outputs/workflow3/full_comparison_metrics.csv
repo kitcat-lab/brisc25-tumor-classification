@@ -1,0 +1,9 @@
+Workflow,Accuracy (%),F1 macro (%),AUC (%)
+1: CNN end-to-end,94.54,94.5,99.56
+2: Wavelet + LGBM,91.38,91.32,98.61
+3: Hybrid CNN (Melhor),96.5,96.75,99.8
+4: Hybrid CNN + LightGBM,96.4,96.68,99.84
+4: Hybrid CNN + XGBoost,96.5,96.75,99.8
+4: Hybrid CNN + CatBoost,95.9,96.07,99.74
+4: Hybrid CNN + RandomForest,96.1,96.38,99.73
+4: Hybrid CNN + GradientBoosting,96.0,96.26,99.75

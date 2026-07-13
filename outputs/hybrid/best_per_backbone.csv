@@ -1,0 +1,7 @@
+backbone,classifier,accuracy,f1,auc,ci95_lo,ci95_hi
+W7_VGG16_ImageNet,LightGBM,98.67,98.69,99.83,97.64,99.41
+W6_ResNet50_ImageNet,SVM (RBF),97.49,97.57,99.84,96.31,98.53
+W3_CNN_scratch,LightGBM,96.76,96.77,99.77,95.43,97.94
+W9_ConvNeXtTiny_ImageNet,SVM (RBF),96.46,96.55,99.64,94.99,97.79
+W8_EfficientNetB2_ImageNet,SVM (RBF),94.84,94.99,99.31,93.22,96.46
+W10_RadImageNet_ResNet50,LightGBM,82.01,82.31,95.41,78.91,84.66

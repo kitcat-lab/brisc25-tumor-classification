@@ -1,0 +1,14 @@
+model,weighted_avg_accuracy_raw,status
+EfficientNetB0,99.2,ok
+EfficientNetB1,99.03,ok
+EfficientNetB2,98.37,ok
+ResNet50,98.2,ok
+ResNet101,98.09,ok
+VGG16,96.92,ok
+VGG19,96.29,ok
+MobileNetV3,94.42,ok
+InceptionV3,61.98,unstable/failed
+DenseNet169,50.93,unstable/failed
+DenseNet121,45.31,unstable/failed
+MobileNetV2,21.15,unstable/failed
+Xception,5.72,unstable/failed
