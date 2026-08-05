@@ -6,8 +6,7 @@ Training scripts, feature extraction pipelines, result files, and forensic audit
 
 This repository supports the article:
 
-> C. Bota, M. I. Barbosa, P. M. Rodrigues, "Which Brain-Tumor Classifier Really Wins? A Leakage-Controlled
-Benchmark on BRISC 2025"
+> C. Bota, M. I. Barbosa, P. M. Rodrigues, "Benchmarking Brain-Tumor MRI Classification Methods Under Leakage-Controlled Conditions: A BRISC 2025 Study"
 
 The study compares wavelet-texture (GLCM) classifiers, transfer-learning backbones (ResNet50, VGG16, EfficientNet-B2, ConvNeXt-Tiny), and a scratch CNN on the BRISC 2025 dataset across three imaging planes (axial, coronal, sagittal).
 
