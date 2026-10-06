@@ -1,0 +1,117 @@
+[
+  {
+    "path": "artifacts/models/modelo_brisc.h5",
+    "size": 51505440,
+    "sha256": "5d8f45809dba2fa412459d73a24de74cad2e2848735eb7a304a0a8bc823cc7ee"
+  },
+  {
+    "path": "artifacts/models/leakage_v3/audited/model.h5",
+    "size": 51505440,
+    "sha256": "1b24a6ecfaf419f68e5af64e09b18b813dbdf7f9bed2af7a7b176b59f09290d5"
+  },
+  {
+    "path": "artifacts/models/scratch_cnn_optimized/audited/model.keras",
+    "size": 7856511,
+    "sha256": "a6a6110c9e88b2f655c7c762bdd51ba81b000ddda647315987611a83b2899521"
+  },
+  {
+    "path": "artifacts/models/leakage_backbones/W6_ResNet50_ImageNet/audited/model.h5",
+    "size": 242536832,
+    "sha256": "3deea65fec150cf994bbdc2df42f5a15a14ffa9e3fcc21af4e20e733d2aff409"
+  },
+  {
+    "path": "artifacts/models/leakage_backbones/W7_VGG16_ImageNet/audited/model.h5",
+    "size": 177476608,
+    "sha256": "13f5be275308c38ad5a46a791d6b9f6b84bfc542bd026fedbcf99b65228cbdb2"
+  },
+  {
+    "path": "artifacts/models/leakage_backbones/W8_EfficientNetB2_ImageNet/audited/model.h5",
+    "size": 68751064,
+    "sha256": "12f6fa6b2fccafc0e4e717adb457ae5096ed4a328adaab9462ac3c34a3b16b2b"
+  },
+  {
+    "path": "artifacts/models/leakage_backbones/W9_ConvNeXtTiny_ImageNet/audited/model.keras",
+    "size": 284916016,
+    "sha256": "710941473556b6d7be1141bd2ac4453020ddfb687347b75df2481a6510d86ea1"
+  },
+  {
+    "path": "artifacts/models/leakage_backbones/W10_RadImageNet_ResNet50/audited/model.h5",
+    "size": 242536832,
+    "sha256": "e208c9e1fff90daacd6d50aece85593a803751a42f15368e3ca285e9696dac42"
+  },
+  {
+    "path": "artifacts/models/leakage_backbones/W14_EfficientNetB0_ImageNet/audited/model.h5",
+    "size": 40082360,
+    "sha256": "7390b3ffa969deeeeb8271aedb1e5ceff866453cfa5ba01276006159e873c4b8"
+  },
+  {
+    "path": "artifacts/models/efficientnet_optimized/B0/audited/model.keras",
+    "size": 50840040,
+    "sha256": "30e7353482cf2a597a16b54b01a3f040e499879c1c943996edf4acc2ae3712a3"
+  },
+  {
+    "path": "artifacts/models/efficientnet_optimized/B1/audited/model.keras",
+    "size": 81216417,
+    "sha256": "ac7f884ffa3cb26ebd3d9d46bd91fd4050df93372d8d055572f8ce2ffda11450"
+  },
+  {
+    "path": "artifacts/models/efficientnet_optimized/B2/audited/model.keras",
+    "size": 95644665,
+    "sha256": "ea71c0f72fc1359771fad5ff2f862efbfd22885bf70ea5e5721a79655dd2ee02"
+  },
+  {
+    "path": "artifacts/models/w11_hybrid/W3_CNN_scratch/scaler.pkl",
+    "size": 3497,
+    "sha256": "f4a49889d5773ac34bb4518dc24f2064b3f4765f91eb5f3ce39b142e6f5ab891"
+  },
+  {
+    "path": "artifacts/models/w11_hybrid/W3_CNN_scratch/classifiers/LightGBM.pkl",
+    "size": 6175136,
+    "sha256": "801931a5f82920cd4a6a20db48224807ea9eb696f2febde43f388005807d59f9"
+  },
+  {
+    "path": "artifacts/models/w11_hybrid/W7_VGG16_ImageNet/scaler.pkl",
+    "size": 3497,
+    "sha256": "e355a00409b418699d7bf82e37e3e287e29aacc2796f4358286323c23e1d46f7"
+  },
+  {
+    "path": "artifacts/models/w11_hybrid/W7_VGG16_ImageNet/classifiers/LightGBM.pkl",
+    "size": 5184994,
+    "sha256": "8abe495c3dee831de443541f9c38c0ef9a2b940db5002d779554e6e0c660c515"
+  },
+  {
+    "path": "artifacts/features/features_BRISC_db4_preprocessed.xlsx",
+    "size": 37926226,
+    "sha256": "701389a4332d34810b8a23de37f5921496c72ef9ca3c257f607c7a2baa3bf24c"
+  },
+  {
+    "path": "artifacts/features/features_BRISC_db4_skullstripped.xlsx",
+    "size": 38917687,
+    "sha256": "f9b0ef35077313bee4372abe506679db01e3ffb4b46eb9c789765ff9f0ca51e4"
+  },
+  {
+    "path": "artifacts/features/features_BRISC_preprocessed.xlsx",
+    "size": 38610575,
+    "sha256": "be510f42a920afd632d6ca3b63beb989f3575d992185c6d280ac5d0c4f46d106"
+  },
+  {
+    "path": "artifacts/features/features_BRISC_skullstripped.xlsx",
+    "size": 38939503,
+    "sha256": "f133bb7e3a487503a1037be982927aca51863a48689eb04082c52e479e9d36f5"
+  },
+  {
+    "path": "artifacts/manuscript/Manuscript.pdf",
+    "size": 21457602,
+    "sha256": "b57abe6b9a1474b32297f4cae84618181c5f00a1eed19b052374545d774d8908"
+  },
+  {
+    "path": "artifacts/manuscript/main.pdf",
+    "size": 103902,
+    "sha256": "e683d854a7671c29fbedbd19c1de0a4ff0df486e21ed6bd7be7eba1a3f540268"
+  },
+  {
+    "path": "artifacts/third_party/GLCM_Features.m",
+    "size": 18013,
+    "sha256": "e858a08f28c3c377968207f273f13b10af727318898f305bf7d309067c31620b"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "raw_n": 6000,
+  "clean_n": 5041,
+  "counts": {
+    "train/meningioma": 1146,
+    "train/glioma": 1007,
+    "train/pituitary": 1200,
+    "train/no_tumor": 1010,
+    "test/meningioma": 162,
+    "test/glioma": 193,
+    "test/pituitary": 193,
+    "test/no_tumor": 130
+  },
+  "log_rows": 959,
+  "reasons": {
+    "md5_exact": 50,
+    "phash<=5": 909
+  },
+  "removed_equals_log": true,
+  "desktop_names_equal": true,
+  "desktop_content_mismatches": [],
+  "remaining_near_duplicates_cross_split": [],
+  "remaining_near_duplicates_within_split": 0,
+  "removed_cross_split_pairs_or_md5_peer": 303,
+  "removed_cross_class_pairs_or_md5_peer": 10,
+  "md5_peer_note": "For exact-MD5 records with no retained path, the peer is reconstructed and is not necessarily the retained representative."
+}

@@ -1,0 +1,14 @@
+{
+  "family": [
+    "cnn_canonical",
+    "vgg16",
+    "vgg16_lgbm",
+    "radimagenet"
+  ],
+  "n_contrasts": 6,
+  "bootstrap": "class-stratified",
+  "resamples": 1000,
+  "seed": 42,
+  "row_order": "class label then filename",
+  "test_selection_bias_corrected": false
+}
