@@ -60,3 +60,22 @@ The output directory receives the three NumLevels sheets. The db4 wrapper retain
 ## Large files and deployment state
 
 `artifacts/`, raw images and `runs/` are ignored by Git. `provenance/artifacts.json` records the exact locally supplied checkpoints, two hybrid classifiers/scalers, workbooks and working PDFs. The third-party GLCM file is listed separately. A future public release should provide model/feature release assets or an artifact host with checksums, without embedding private reviewer correspondence. No remote or publication operation is part of the current package.
+
+## Repeat the full pHash audit
+
+Run the manifest check, candidate scan, decoded-RGB comparison and candidate-count sensitivity as one command:
+
+```bash
+python scripts/run_phash_audit.py --dataset /path/to/original/classification_task --output runs/new_phash_audit
+```
+
+The output directory must be new. The command records package versions, source hashes and stage exit codes. It writes diagnostic results only and makes no image-removal decisions. `results/curation/` contains the repeated 6 October execution with all review fields blank.
+
+## Rebuild the coauthor document
+
+```bash
+python -m pip install -r requirements/documents.txt
+python scripts/build_coauthor_report.py
+```
+
+The Markdown source under `docs/` is the editable master; Word and PDF are generated discussion copies. On Windows, `--font-dir C:/Windows/Fonts` embeds Arial in the PDF. Regenerating documents changes their file hashes; refresh the bundle inventory when publishing a new version.

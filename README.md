@@ -18,7 +18,11 @@ Inference on the historical 678-image test set confirmed:
 
 The CNN confidence interval in the manuscript came from the earlier execution. The corrected class-stratified bootstrap interval for the canonical CNN is **91.89–95.43%** (1000 resamples, seed 42, class/filename order). VGG16 versus VGG16+LightGBM gives continuity-corrected McNemar **p = 0.182422439**; Holm across the six declared contrasts retains that value.
 
-See [audit findings](docs/AUDIT_2026-10-05.md), [result interpretation](docs/RESULTS.md) and [reproducibility instructions](docs/REPRODUCIBILITY.md).
+See [audit findings](docs/AUDIT_2026-10-05.md), [pHash review and next steps](docs/PHASH_REVIEW.md), [result interpretation](docs/RESULTS.md) and [reproducibility instructions](docs/REPRODUCIBILITY.md).
+
+The [coauthor discussion document](docs/BRISC25_coautores_2026-10-06.md) brings together the eight Reviewer 1 comments, proposed wording and remaining decisions. It is also available as [PDF](docs/BRISC25_coautores_2026-10-06.pdf) and [Word](docs/BRISC25_coautores_2026-10-06.docx). These are proposals for discussion; they have not been applied to the manuscript.
+
+The repeated pHash audit and decoded-pixel checks are in `results/curation/`. All 6000 original images matched the manifest. The scan found 1349 candidate pairs, including 159 pairs with identical decoded RGB pixels; human curation decisions remain blank. Threshold comparisons describe candidate counts, not changes in model accuracy.
 
 ## Quick start: recompute statistics
 

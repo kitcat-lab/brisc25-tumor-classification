@@ -25,3 +25,9 @@ Local artifacts and validation run outputs are excluded from Git. The standalone
 ## Checks after integration into the original repository
 
 On 6 October 2026, the package was copied into the local `article-clean` branch, based on commit `21a47328ec31c5f75a29c353d3f5b861c4fd02ee`. The original Git history and remote were retained. Package integrity, artifact hashes, regression tests and statistics were checked again from this checkout. The audit snapshot revision was recovered by fetching the updated main branch before merging. Both references are documented in `provenance/integration.json`.
+
+## Repeated pHash audit and coauthor document
+
+The 6 October run verified all 6000 original images against the SHA256 manifest and completed all four stages of `run_phash_audit.py`. The candidate scan reproduced 1349 pairs; 159 had identical decoded RGB pixels, including 110 across train and test. Candidate counts were compared at distances 0, 2, 4 and 5; this is not model-performance sensitivity. No dataset changes or new model training occurred.
+
+Five regression tests passed, including identical pixels in files with different metadata, changed-source rejection, historical-pair recovery and existing curation safeguards. The six-page coauthor PDF was visually checked. The Word document is generated from the same Markdown source. Full human adjudication remains pending; all published reviewer/decision fields are blank.

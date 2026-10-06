@@ -1,0 +1,8 @@
+{
+  "expected": 6000,
+  "found": 6000,
+  "missing": [],
+  "extra": [],
+  "content_mismatches": [],
+  "status": "historical_manifest_check; does not validate duplicate-removal decisions"
+}

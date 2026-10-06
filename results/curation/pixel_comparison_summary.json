@@ -1,0 +1,15 @@
+{
+  "pairs_checked": 1349,
+  "images_checked": 1834,
+  "exact_file_sha256_pairs": 55,
+  "identical_decoded_rgb_pairs": 159,
+  "identical_decoded_rgb_cross_split_pairs": 110,
+  "identical_decoded_rgb_cross_class_pairs": 0,
+  "automatic_removals": 0,
+  "method": "Pillow RGB decode, original dimensions; no registration or resizing",
+  "note": "Different pixels are not proof that images are unrelated; review remains required.",
+  "identical_rgb_groups": 134,
+  "images_in_identical_rgb_groups": 278,
+  "redundant_images_if_one_per_identical_rgb_group": 144,
+  "identical_rgb_groups_spanning_train_test": 98
+}

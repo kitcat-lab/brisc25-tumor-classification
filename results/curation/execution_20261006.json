@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-10-06T11:44:15.173409+00:00",
+  "python": "3.12.13",
+  "versions": {
+    "numpy": "2.1.3",
+    "Pillow": "12.2.0",
+    "ImageHash": "4.3.2"
+  },
+  "source_hashes": {
+    "data/manifests/dataset_manifest_verified.csv": "2fc5ebea5a410e3bc442ae7afd94d974f8b0f924a26690d7d9788c4795895488",
+    "data/manifests/audit_log_959.csv": "c4b6632751254fe90f1f0d5d0e32a85bd14fd38b06593ac4f0e3ff74562cf9cd",
+    "scripts/curation.py": "fc2355a8874952c8f527affa08ee0aded174ce93b937a9ccc1fdc731e78cea88",
+    "scripts/compare_candidate_pixels.py": "cf69c8cc4a1ac1f77afe005bd861dbe7107ef59a69b49bfa0ae7b7c140cb8e7a",
+    "scripts/summarize_phash_candidates.py": "c0b60c2d59add436509fca3dccd400a9403a7c7a2993c936b523cfcae06bd943",
+    "scripts/run_phash_audit.py": "70decabb5dc25563878d3d2e41335ba73c613f7a18ce1d194f42efeb59558681"
+  },
+  "stages": [
+    {
+      "name": "verify_original",
+      "exit_code": 0
+    },
+    {
+      "name": "candidates",
+      "exit_code": 0
+    },
+    {
+      "name": "pixels",
+      "exit_code": 0
+    },
+    {
+      "name": "summary",
+      "exit_code": 0
+    }
+  ],
+  "dataset_changes": 0,
+  "manual_adjudication": "not performed by this command",
+  "status": "completed",
+  "finished_utc": "2026-10-06T11:44:31.385945+00:00"
+}

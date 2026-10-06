@@ -1,0 +1,69 @@
+{
+  "candidate_pairs": 1349,
+  "unique_images_in_candidates": 1834,
+  "similarity_graph_components": 720,
+  "largest_component_images": 16,
+  "pair_counts_by_distance": {
+    "0": 205,
+    "2": 295,
+    "4": 849
+  },
+  "cross_class_pairs": 23,
+  "cross_split_pairs": 440,
+  "cross_class_and_cross_split_pairs": 3,
+  "exact_md5_pairs": 55,
+  "exact_md5_cross_split_pairs": 9,
+  "historical_phash_exclusions": 909,
+  "historical_phash_distance_counts": {
+    "0": 110,
+    "2": 193,
+    "4": 606
+  },
+  "historical_phash_cross_class_pairs": 10,
+  "historical_phash_cross_split_pairs": 296,
+  "historical_removed_by_split": {
+    "train": 599,
+    "test": 310
+  },
+  "historical_removed_by_class": {
+    "glioma": 200,
+    "meningioma": 305,
+    "no_tumor": 57,
+    "pituitary": 347
+  },
+  "automatic_removals": 0,
+  "review_status": "pending; priorities and graph components are not duplicate decisions",
+  "component_note": "Connected pHash candidates need not all be copies of one image.",
+  "threshold_sensitivity": [
+    {
+      "max_hamming_distance": 0,
+      "candidate_pairs": 205,
+      "cross_class_pairs": 0,
+      "cross_split_pairs": 128,
+      "identical_decoded_rgb_pairs": 159
+    },
+    {
+      "max_hamming_distance": 2,
+      "candidate_pairs": 500,
+      "cross_class_pairs": 2,
+      "cross_split_pairs": 213,
+      "identical_decoded_rgb_pairs": 159
+    },
+    {
+      "max_hamming_distance": 4,
+      "candidate_pairs": 1349,
+      "cross_class_pairs": 23,
+      "cross_split_pairs": 440,
+      "identical_decoded_rgb_pairs": 159
+    },
+    {
+      "max_hamming_distance": 5,
+      "candidate_pairs": 1349,
+      "cross_class_pairs": 23,
+      "cross_split_pairs": 440,
+      "identical_decoded_rgb_pairs": 159
+    }
+  ],
+  "threshold_sensitivity_note": "Pair-count sensitivity only. No removals, new benchmark or model-performance sensitivity was computed.",
+  "historical_phash_identical_decoded_rgb_pairs": 83
+}
