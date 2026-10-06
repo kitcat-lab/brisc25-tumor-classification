@@ -1,0 +1,94 @@
+{
+  "cnn_canonical": {
+    "path": "artifacts/models/modelo_brisc.h5",
+    "sha256": "5d8f45809dba2fa412459d73a24de74cad2e2848735eb7a304a0a8bc823cc7ee",
+    "image_size": 128,
+    "preprocessing": "rescale_255",
+    "feature_layer": null,
+    "hybrid": {
+      "scaler": "artifacts/models/w11_hybrid/W3_CNN_scratch/scaler.pkl",
+      "classifier": "artifacts/models/w11_hybrid/W3_CNN_scratch/classifiers/LightGBM.pkl"
+    }
+  },
+  "cnn_leakage_v3": {
+    "path": "artifacts/models/leakage_v3/audited/model.h5",
+    "sha256": "1b24a6ecfaf419f68e5af64e09b18b813dbdf7f9bed2af7a7b176b59f09290d5",
+    "image_size": 128,
+    "preprocessing": "rescale_255",
+    "feature_layer": null
+  },
+  "cnn_four_block": {
+    "path": "artifacts/models/scratch_cnn_optimized/audited/model.keras",
+    "sha256": "a6a6110c9e88b2f655c7c762bdd51ba81b000ddda647315987611a83b2899521",
+    "image_size": 128,
+    "preprocessing": "rescale_255",
+    "feature_layer": "feat_dense"
+  },
+  "resnet50": {
+    "path": "artifacts/models/leakage_backbones/W6_ResNet50_ImageNet/audited/model.h5",
+    "sha256": "3deea65fec150cf994bbdc2df42f5a15a14ffa9e3fcc21af4e20e733d2aff409",
+    "image_size": 224,
+    "preprocessing": "resnet50",
+    "feature_layer": "feat_dense"
+  },
+  "vgg16": {
+    "path": "artifacts/models/leakage_backbones/W7_VGG16_ImageNet/audited/model.h5",
+    "sha256": "13f5be275308c38ad5a46a791d6b9f6b84bfc542bd026fedbcf99b65228cbdb2",
+    "image_size": 224,
+    "preprocessing": "vgg16",
+    "feature_layer": "feat_dense",
+    "hybrid": {
+      "scaler": "artifacts/models/w11_hybrid/W7_VGG16_ImageNet/scaler.pkl",
+      "classifier": "artifacts/models/w11_hybrid/W7_VGG16_ImageNet/classifiers/LightGBM.pkl"
+    }
+  },
+  "efficientnetb2_uniform": {
+    "path": "artifacts/models/leakage_backbones/W8_EfficientNetB2_ImageNet/audited/model.h5",
+    "sha256": "12f6fa6b2fccafc0e4e717adb457ae5096ed4a328adaab9462ac3c34a3b16b2b",
+    "image_size": 260,
+    "preprocessing": "efficientnet",
+    "feature_layer": "feat_dense"
+  },
+  "convnext": {
+    "path": "artifacts/models/leakage_backbones/W9_ConvNeXtTiny_ImageNet/audited/model.keras",
+    "sha256": "710941473556b6d7be1141bd2ac4453020ddfb687347b75df2481a6510d86ea1",
+    "image_size": 224,
+    "preprocessing": "convnext",
+    "feature_layer": "feat_dense"
+  },
+  "radimagenet": {
+    "path": "artifacts/models/leakage_backbones/W10_RadImageNet_ResNet50/audited/model.h5",
+    "sha256": "e208c9e1fff90daacd6d50aece85593a803751a42f15368e3ca285e9696dac42",
+    "image_size": 224,
+    "preprocessing": "radimagenet_historical",
+    "feature_layer": "feat_dense"
+  },
+  "efficientnetb0_uniform": {
+    "path": "artifacts/models/leakage_backbones/W14_EfficientNetB0_ImageNet/audited/model.h5",
+    "sha256": "7390b3ffa969deeeeb8271aedb1e5ceff866453cfa5ba01276006159e873c4b8",
+    "image_size": 224,
+    "preprocessing": "efficientnet",
+    "feature_layer": "feat_dense"
+  },
+  "efficientnetb0_optimized": {
+    "path": "artifacts/models/efficientnet_optimized/B0/audited/model.keras",
+    "sha256": "30e7353482cf2a597a16b54b01a3f040e499879c1c943996edf4acc2ae3712a3",
+    "image_size": 224,
+    "preprocessing": "efficientnet",
+    "feature_layer": "feat_dense"
+  },
+  "efficientnetb1_optimized": {
+    "path": "artifacts/models/efficientnet_optimized/B1/audited/model.keras",
+    "sha256": "ac7f884ffa3cb26ebd3d9d46bd91fd4050df93372d8d055572f8ce2ffda11450",
+    "image_size": 240,
+    "preprocessing": "efficientnet",
+    "feature_layer": "feat_dense"
+  },
+  "efficientnetb2_optimized": {
+    "path": "artifacts/models/efficientnet_optimized/B2/audited/model.keras",
+    "sha256": "ea71c0f72fc1359771fad5ff2f862efbfd22885bf70ea5e5721a79655dd2ee02",
+    "image_size": 260,
+    "preprocessing": "efficientnet",
+    "feature_layer": "feat_dense"
+  }
+}

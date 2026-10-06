@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-06",
+  "branch": "codex/article-clean",
+  "original_repository": "https://github.com/kitcat-lab/brisc25-tumor-classification.git",
+  "branch_base_commit": "21a47328ec31c5f75a29c353d3f5b861c4fd02ee",
+  "clean_package_commit": "2fa81dbdb90491eaed3e3ccc113e9eb58b124add",
+  "audit_snapshot_revision": "fc626c3d1c29e7b7763d88ec4d33b8764126e384",
+  "audit_snapshot_revision_present_in_original_history": false,
+  "note": "The audit snapshot revision is retained as recorded provenance, but is not a commit in this original checkout. The branch base above identifies the verified original history. All 194 original output files are preserved under results/historical.",
+  "local_artifacts_copied": 23,
+  "push_performed": false
+}

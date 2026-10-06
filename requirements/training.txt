@@ -1,0 +1,7 @@
+-r analysis.txt
+tensorflow==2.19.0
+keras==3.15.0
+lightgbm==4.6.0
+catboost==1.2.10
+xgboost==3.3.0
+openpyxl==3.1.5
