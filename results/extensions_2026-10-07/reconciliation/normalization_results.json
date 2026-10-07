@@ -1,0 +1,14 @@
+{
+  "efficientnetb0_uniform": {
+    "reloaded_generator_accuracy": 89.08554572271386,
+    "historic_csv_accuracy": 89.08554572271386,
+    "prediction_disagreements": 0,
+    "original_label_order_verified": true
+  },
+  "efficientnetb2_uniform": {
+    "reloaded_generator_accuracy": 93.952802359882,
+    "historic_csv_accuracy": 93.952802359882,
+    "prediction_disagreements": 0,
+    "original_label_order_verified": true
+  }
+}

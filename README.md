@@ -4,7 +4,14 @@ Materials supporting **Benchmarking Brain-Tumor MRI Classification Methods Under
 
 This repository brings together the original results, predictions linked to image filenames, corrected statistics and scripts for checking the models and reviewing duplicate-image candidates. **The historical pHash exclusions remain under review.** Reproducing their image count does not establish that every excluded image was a true duplicate, or that patient-level independence holds.
 
-## Verified results
+## Follow-up experiments (7 October 2026)
+
+
+Adapted ResNet50 mean accuracy was 98.57% for ImageNet and 98.43% for RadImageNet over three seeds. Exact-duplicate-only and historical training filtering both yielded 98.57% mean accuracy for the representative ImageNet configuration on the same 678-image test set. These are exploratory results, not equivalence tests or validation of every pHash exclusion. [Prediction files, manifests and run summaries](results/extensions_2026-10-07/) document all runs.
+
+The original prediction CSVs confirm the manuscript's uniform ResNet50 (97.49%), EfficientNetB0 (89.09%) and EfficientNetB2 (93.95%) accuracies. A nested Normalization-state issue in legacy H5 loading initially caused incorrect EfficientNet reload results; the corrected loader recovers every historical class prediction for both EfficientNet models. ResNet50 reload still differs on one image (97.35%), while its original CSV supports 97.49%. The classical 90.71% result is confirmed in its original spreadsheet; the 90.56% Python refit is separate. The notebooks are in `notebooks/`; workflow 19 is in English. Checkpoints and dataset images are external inputs.
+
+## Verified historical results
 
 Inference on the historical 678-image test set confirmed:
 

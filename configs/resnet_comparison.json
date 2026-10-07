@@ -1,0 +1,20 @@
+{
+  "experiment": "resnet50_pretraining_and_protocol",
+  "seeds": [42, 43, 44],
+  "split_seed": 42,
+  "validation_fraction": 0.2,
+  "image_size": 224,
+  "batch_size": 8,
+  "head_epochs": 5,
+  "head_learning_rate": 0.001,
+  "protocols": {
+    "uniform": {"epochs": 12, "learning_rate": 0.00001, "patience": 5, "unfreeze": "top60"},
+    "adapted": {"epochs": 30, "learning_rate": 0.0001, "patience": 6, "unfreeze": "all_except_batchnorm"}
+  },
+  "weights": {
+    "imagenet": {"sha256": "66c8b43daff3fcc15bc4f30e3d2a167e21a14d9c9598a5394e5516471f4af504", "preprocessing": "keras_resnet50_caffe"},
+    "radimagenet": {"sha256": "1f1d1c9fe6ab6980daa5e528145fe0db249c55415f8b3e1f3e3b1624d184f159", "preprocessing": "official_example_caffe_then_div255"}
+  },
+  "radimagenet_preprocessing_source": "https://github.com/BMEII-AI/RadImageNet/blob/0ce16f7375db4236e646829d1eca61cdb4282133/acl/acl_train.py",
+  "scope": "Prospectively fixed exploratory extension on the historical filtered cohort. Twelve runs; all seeds reported. No pHash curation changes. Preprocessing follows the pinned TensorFlow example; local weight hashes identify supplied artifacts, not independent publisher authentication. Validation is fixed and not augmented, unlike historical scripts. This is not an exact rerun of their training or a BatchNorm-only ablation. The historical test set has already informed prior research and is not a new external confirmation cohort."
+}

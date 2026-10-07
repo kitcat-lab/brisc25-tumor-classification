@@ -4,6 +4,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from common import ROOT, CLASSES, save_predictions, metrics
+from model_loading import restore_normalization_state
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
@@ -11,7 +12,9 @@ def main():
     parser.add_argument('--models',nargs='+',default=['cnn_canonical','vgg16','radimagenet'])
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--registry',type=Path,default=ROOT/'configs/models.json')
+    parser.add_argument('--batch-size',type=int,default=8,help='Inference batch size; 8 fits the recorded laptop GPU')
     args=parser.parse_args()
+    if args.batch_size < 1: parser.error('Batch size must be positive')
     if args.output.exists(): parser.error('Use a fresh output directory')
     registry=json.loads(args.registry.read_text())
     if not set(args.models)<=set(registry):parser.error('Unknown model name')
@@ -40,20 +43,22 @@ def main():
                 custom={'LayerScale':LayerScale}
             except ImportError:pass
         model=tf.keras.models.load_model(checkpoint,compile=False,custom_objects=custom)
+        normalization_layers=restore_normalization_state(model)
         pre=preprocess(cfg['preprocessing']);size=cfg['image_size']
         ext=None
         if cfg.get('hybrid'):
             if cfg['feature_layer']:ext=tf.keras.Model(model.inputs,model.get_layer(cfg['feature_layer']).output)
             else:ext=tf.keras.Sequential(model.layers[:-1]);ext.build(model.input_shape)
         probs=[];features=[]
-        for i in range(0,len(paths),32):
-            batch=pre(np.stack([tf.keras.utils.img_to_array(tf.keras.utils.load_img(p,target_size=(size,size))) for p in paths[i:i+32]]))
+        for i in range(0,len(paths),args.batch_size):
+            batch=pre(np.stack([tf.keras.utils.img_to_array(tf.keras.utils.load_img(p,target_size=(size,size))) for p in paths[i:i+args.batch_size]]))
             probs.append(model(batch,training=False).numpy())
             if ext is not None:features.append(ext(batch,training=False).numpy())
         def emit(label,prob):
             path=args.output/f'{label}_predictions.csv'
             save_predictions(path,[p.name for p in paths],y,prob.argmax(axis=1),prob)
-            results[label]={**metrics(pd.read_csv(path)),'model_sha256':sha,'historical_test_set':True}
+            results[label]={**metrics(pd.read_csv(path)),'model_sha256':sha,'historical_test_set':True,'inference_batch_size':args.batch_size,
+                            'normalization_state_restored':normalization_layers}
         emit(name,np.concatenate(probs))
         if ext is not None:
             with (ROOT/cfg['hybrid']['scaler']).open('rb') as f:scaler=pickle.load(f)

@@ -1,0 +1,29 @@
+[
+  {
+    "model": "W6_ResNet50_ImageNet",
+    "n": 678,
+    "correct": 661,
+    "accuracy": 97.49262536873157,
+    "f1": 97.55667470030896,
+    "reported": 97.49,
+    "cm_matches": true
+  },
+  {
+    "model": "W8_EfficientNetB2_ImageNet",
+    "n": 678,
+    "correct": 637,
+    "accuracy": 93.952802359882,
+    "f1": 94.18399436030491,
+    "reported": 93.95,
+    "cm_matches": true
+  },
+  {
+    "model": "W14_EfficientNetB0_ImageNet",
+    "n": 678,
+    "correct": 604,
+    "accuracy": 89.08554572271386,
+    "f1": 89.57567834818295,
+    "reported": 89.09,
+    "cm_matches": true
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "resnet50": {
+    "reloaded_generator_accuracy": 97.34513274336283,
+    "historic_csv_accuracy": 97.49262536873157,
+    "prediction_disagreements": 1,
+    "original_label_order_verified": true
+  },
+  "efficientnetb0_uniform": {
+    "reloaded_generator_accuracy": 85.39823008849558,
+    "historic_csv_accuracy": 89.08554572271386,
+    "prediction_disagreements": 73,
+    "original_label_order_verified": true
+  },
+  "efficientnetb2_uniform": {
+    "reloaded_generator_accuracy": 89.67551622418878,
+    "historic_csv_accuracy": 93.952802359882,
+    "prediction_disagreements": 55,
+    "original_label_order_verified": true
+  }
+}

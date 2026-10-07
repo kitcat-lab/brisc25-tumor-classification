@@ -1,0 +1,10 @@
+{
+  "source": "runs/resnet_comparison_20261006_235702/imagenet_adapted_seed44",
+  "identical_roles_images_recipe_and_runner": true,
+  "source_file_hashes": {
+    "metrics.json": "24510913d8d1da97768e53d657373b5d4d46e2ac2cd982ea4c66ab661f18fa73",
+    "predictions.csv": "684f7a117fe86ec4c1494f4d3291398242b3678d62c791f4f0547114487853d6",
+    "history.json": "a95da01a5776cbb7bee36f675b167373f1481269082a64f8c1c17b4bf7de22ac"
+  },
+  "model_path": "runs/resnet_comparison_20261006_235702/imagenet_adapted_seed44/model.keras"
+}

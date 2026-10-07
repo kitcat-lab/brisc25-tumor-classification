@@ -1,0 +1,127 @@
+{
+  "config": {
+    "experiment": "resnet50_pretraining_and_protocol",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 42,
+    "validation_fraction": 0.2,
+    "image_size": 224,
+    "batch_size": 8,
+    "head_epochs": 5,
+    "head_learning_rate": 0.001,
+    "protocols": {
+      "uniform": {
+        "epochs": 12,
+        "learning_rate": 1e-05,
+        "patience": 5,
+        "unfreeze": "top60"
+      },
+      "adapted": {
+        "epochs": 30,
+        "learning_rate": 0.0001,
+        "patience": 6,
+        "unfreeze": "all_except_batchnorm"
+      }
+    },
+    "weights": {
+      "imagenet": {
+        "sha256": "66c8b43daff3fcc15bc4f30e3d2a167e21a14d9c9598a5394e5516471f4af504",
+        "preprocessing": "keras_resnet50_caffe"
+      },
+      "radimagenet": {
+        "sha256": "1f1d1c9fe6ab6980daa5e528145fe0db249c55415f8b3e1f3e3b1624d184f159",
+        "preprocessing": "official_example_caffe_then_div255"
+      }
+    },
+    "radimagenet_preprocessing_source": "https://github.com/BMEII-AI/RadImageNet/blob/0ce16f7375db4236e646829d1eca61cdb4282133/acl/acl_train.py",
+    "scope": "Prospectively fixed exploratory extension on the historical filtered cohort. Twelve runs; all seeds reported. No pHash curation changes. Preprocessing follows the pinned TensorFlow example; local weight hashes identify supplied artifacts, not independent publisher authentication. Validation is fixed and not augmented, unlike historical scripts. This is not an exact rerun of their training or a BatchNorm-only ablation. The historical test set has already informed prior research and is not a new external confirmation cohort."
+  },
+  "dataset": "<HISTORICAL_DATASET>",
+  "weights": {
+    "imagenet": "<IMAGENET_WEIGHTS>/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5",
+    "radimagenet": "<RADIMAGENET_WEIGHTS>/RadImageNet-ResNet50_notop.h5"
+  },
+  "source_hashes": {
+    "scripts/train_resnet_comparison.py": "623424bd6b635ea88ea4ce5e158ea579451afd84a25b1a0be2ed10446c0de243",
+    "scripts/common.py": "c570c956b63152d5424a2403d377101f2e9c07c5e0854d5dc6d3d4c3a746be2d",
+    "configs/resnet_comparison.json": "87ded13f9b1b7537eecf8f5ce5abcb1fe5eeaa644f6d3ee2c145af6c1eb38b7c"
+  },
+  "jobs": [
+    {
+      "id": "imagenet_uniform_seed42",
+      "origin": "imagenet",
+      "protocol": "uniform",
+      "seed": 42
+    },
+    {
+      "id": "radimagenet_uniform_seed42",
+      "origin": "radimagenet",
+      "protocol": "uniform",
+      "seed": 42
+    },
+    {
+      "id": "imagenet_adapted_seed42",
+      "origin": "imagenet",
+      "protocol": "adapted",
+      "seed": 42
+    },
+    {
+      "id": "radimagenet_adapted_seed42",
+      "origin": "radimagenet",
+      "protocol": "adapted",
+      "seed": 42
+    },
+    {
+      "id": "imagenet_uniform_seed43",
+      "origin": "imagenet",
+      "protocol": "uniform",
+      "seed": 43
+    },
+    {
+      "id": "radimagenet_uniform_seed43",
+      "origin": "radimagenet",
+      "protocol": "uniform",
+      "seed": 43
+    },
+    {
+      "id": "imagenet_adapted_seed43",
+      "origin": "imagenet",
+      "protocol": "adapted",
+      "seed": 43
+    },
+    {
+      "id": "radimagenet_adapted_seed43",
+      "origin": "radimagenet",
+      "protocol": "adapted",
+      "seed": 43
+    },
+    {
+      "id": "imagenet_uniform_seed44",
+      "origin": "imagenet",
+      "protocol": "uniform",
+      "seed": 44
+    },
+    {
+      "id": "radimagenet_uniform_seed44",
+      "origin": "radimagenet",
+      "protocol": "uniform",
+      "seed": 44
+    },
+    {
+      "id": "imagenet_adapted_seed44",
+      "origin": "imagenet",
+      "protocol": "adapted",
+      "seed": 44
+    },
+    {
+      "id": "radimagenet_adapted_seed44",
+      "origin": "radimagenet",
+      "protocol": "adapted",
+      "seed": 44
+    }
+  ],
+  "split_sha256": "c84add0150f6d8caefd33d8875238f194df158c78cf3a5a8a0501dc3b5cc6055"
+}

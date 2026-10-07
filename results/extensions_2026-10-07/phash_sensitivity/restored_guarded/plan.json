@@ -1,0 +1,65 @@
+{
+  "config": {
+    "experiment": "resnet50_pretraining_and_protocol",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 42,
+    "validation_fraction": 0.2,
+    "image_size": 224,
+    "batch_size": 8,
+    "head_epochs": 5,
+    "head_learning_rate": 0.001,
+    "protocols": {
+      "adapted": {
+        "epochs": 30,
+        "learning_rate": 0.0001,
+        "patience": 6,
+        "unfreeze": "all_except_batchnorm"
+      }
+    },
+    "weights": {
+      "imagenet": {
+        "sha256": "66c8b43daff3fcc15bc4f30e3d2a167e21a14d9c9598a5394e5516471f4af504",
+        "preprocessing": "keras_resnet50_caffe"
+      }
+    },
+    "radimagenet_preprocessing_source": "https://github.com/BMEII-AI/RadImageNet/blob/0ce16f7375db4236e646829d1eca61cdb4282133/acl/acl_train.py",
+    "scope": "Prospectively fixed exploratory extension on the historical filtered cohort. Twelve runs; all seeds reported. No pHash curation changes. Preprocessing follows the pinned TensorFlow example; local weight hashes identify supplied artifacts, not independent publisher authentication. Validation is fixed and not augmented, unlike historical scripts. This is not an exact rerun of their training or a BatchNorm-only ablation. The historical test set has already informed prior research and is not a new external confirmation cohort."
+  },
+  "dataset": "<ORIGINAL_DATASET>",
+  "weights": {
+    "imagenet": "<IMAGENET_WEIGHTS>/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5"
+  },
+  "source_hashes": {
+    "scripts/phash_sensitivity.py": "60837fc60460cb90262934a533504e8ce4aa56f90f90650d6d62507ae5b5c6ca",
+    "scripts/train_resnet_comparison.py": "623424bd6b635ea88ea4ce5e158ea579451afd84a25b1a0be2ed10446c0de243",
+    "scripts/common.py": "c570c956b63152d5424a2403d377101f2e9c07c5e0854d5dc6d3d4c3a746be2d",
+    "configs/resnet_comparison.json": "87ded13f9b1b7537eecf8f5ce5abcb1fe5eeaa644f6d3ee2c145af6c1eb38b7c",
+    "data/manifests/dataset_manifest_verified.csv": "2fc5ebea5a410e3bc442ae7afd94d974f8b0f924a26690d7d9788c4795895488",
+    "runs/resnet_comparison_20261006_235702/split.csv": "c84add0150f6d8caefd33d8875238f194df158c78cf3a5a8a0501dc3b5cc6055"
+  },
+  "split_sha256": "cb4152f673aab96bda2595bb650f0aef418584b56aecb126f6bb5ed2891c7ed6",
+  "jobs": [
+    {
+      "id": "imagenet_adapted_seed42",
+      "origin": "imagenet",
+      "protocol": "adapted",
+      "seed": 42
+    },
+    {
+      "id": "imagenet_adapted_seed43",
+      "origin": "imagenet",
+      "protocol": "adapted",
+      "seed": 43
+    },
+    {
+      "id": "imagenet_adapted_seed44",
+      "origin": "imagenet",
+      "protocol": "adapted",
+      "seed": 44
+    }
+  ]
+}

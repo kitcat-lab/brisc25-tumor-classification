@@ -52,6 +52,8 @@ def main():
     parser.add_argument('--source', type=Path, default=ROOT/'docs/BRISC25_coautores_2026-10-06.md')
     parser.add_argument('--output-base', type=Path, default=ROOT/'docs/BRISC25_coautores_2026-10-06')
     parser.add_argument('--font-dir', type=Path)
+    parser.add_argument('--title', default='BRISC 2025 — pontos para discutir com os coautores')
+    parser.add_argument('--date-label', default='6 de outubro de 2026')
     args = parser.parse_args()
     parsed = list(blocks(args.source.read_text(encoding='utf-8')))
     document = Document()
@@ -64,9 +66,9 @@ def main():
     for name in ['Title', 'Heading 1', 'Heading 2']:
         document.styles[name].font.color.rgb = RGBColor.from_string('5F3F5B')
     document.core_properties.author = 'Catarina Bota'
-    document.core_properties.title = 'BRISC 2025 — pontos para discutir com os coautores'
+    document.core_properties.title = args.title
     document.core_properties.subject = 'Curadoria pHash e revisão do manuscrito'
-    section.footer.paragraphs[0].text = 'BRISC 2025 · Documento de discussão · 6 de outubro de 2026'
+    section.footer.paragraphs[0].text = 'BRISC 2025 · Documento de discussão · '+args.date_label
     font, bold = 'Helvetica', 'Helvetica-Bold'
     if args.font_dir:
         pdfmetrics.registerFont(TTFont('ReportText', str(args.font_dir/'arial.ttf')))
@@ -123,11 +125,11 @@ def main():
     document.save(args.output_base.with_suffix('.docx'))
     def footer(canvas, doc):
         canvas.saveState(); canvas.setFont(font, 8); canvas.setFillColor(colors.HexColor('#6B6268'))
-        canvas.drawString(50, 25, 'BRISC 2025 · Documento de discussão · 6 de outubro de 2026')
+        canvas.drawString(50, 25, 'BRISC 2025 · Documento de discussão · '+args.date_label)
         canvas.drawRightString(A4[0]-50, 25, str(doc.page)); canvas.restoreState()
     pdf = SimpleDocTemplate(str(args.output_base.with_suffix('.pdf')), pagesize=A4,
         leftMargin=50, rightMargin=50, topMargin=45, bottomMargin=45,
-        author='Catarina Bota', title='BRISC 2025 — pontos para discutir com os coautores')
+        author='Catarina Bota', title=args.title)
     pdf.build(flow, onFirstPage=footer, onLaterPages=footer)
     print('Created:', args.output_base.with_suffix('.docx'))
     print('Created:', args.output_base.with_suffix('.pdf'))

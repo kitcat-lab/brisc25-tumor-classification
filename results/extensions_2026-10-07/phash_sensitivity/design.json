@@ -1,0 +1,16 @@
+{
+  "arms": [
+    "restored_guarded",
+    "exact_only",
+    "historical_guarded"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "conflicting_rgb_groups": 0,
+  "common_test": 678,
+  "common_validation": 873,
+  "scope": "Exploratory training-curation sensitivity on a common historical test subset. Restored and historical arms have identical-pixel safeguards; neither is a literal reproduction. No patient-independence claim; no manual pHash adjudication; no causal attribution of filtering versus training-set size."
+}
