@@ -1,6 +1,6 @@
 # BRISC 2025 — brain-tumor classification reproducibility package
 
-Materials supporting **Benchmarking Brain-Tumor MRI Classification Methods Under Leakage-Controlled Conditions: A BRISC 2025 Study**.
+Materials supporting **Benchmarking Brain-Tumor MRI Classification Methods on a Curated BRISC 2025 Partition**.
 
 This repository brings together the original results, predictions linked to image filenames, corrected statistics and scripts for checking the models and reviewing duplicate-image candidates. **The historical pHash exclusions remain under review.** Reproducing their image count does not establish that every excluded image was a true duplicate, or that patient-level independence holds.
 
